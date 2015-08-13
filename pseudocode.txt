@@ -1,0 +1,28 @@
+Generally the program acts due to the algorithm provided below, which is easy enough
+(smaller blocks such as error-checkins, concrete realistaions of operations are ommited):
+
+
+1)
+Read in description of Turing's Machine from a file:
+	file -> stripe			# tape content
+	file -> pos				# head position
+	file -> state			# initial state
+	file -> halting-state
+	file -> transition-state,
+		 -> transition-if-char,
+		 -> transition-write,
+		 -> transition-new-state,
+		 -> transition->direction
+2)
+Main cycle:
+	WHILE  state != halting-state  DO
+		i <- MATCH  state,stripe[pos]  WITH  transition-state,transition-if-char
+		IF  i  not found  THEN
+			Exit program (there is no appropriate rule)
+		END IF
+		stripe[pos] <- transition-write[i]
+		state <- transition-new-state[i]
+		pos   <- pos + transition-direction[i]
+	END WHILE
+
+3) Print out resulting tape content

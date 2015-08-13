@@ -1,0 +1,354 @@
+WARNING : Original file doesn't contain blank character '-' at the beginning of stripe, so it will be prepanded and initial position adjusted appropriately.
+WARNING : Original file doesn't contain blank character '-' at the end of stripe, so it will be appended.
+-------------------------------------------
+Initial state of Turing Machine:
+-aabbbbb-
+pos   = 1
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(a)  ->  new state(1), write(-), dir(1)
+Current state of Turing Machine:
+--abbbbb-
+pos   = 2
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+--abbbbb-
+pos   = 3
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+--abbbbb-
+pos   = 4
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+--abbbbb-
+pos   = 5
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+--abbbbb-
+pos   = 6
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+--abbbbb-
+pos   = 7
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+--abbbbb-
+pos   = 8
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(-)  ->  new state(3), write(a), dir(-1)
+Current state of Turing Machine:
+--abbbbba
+pos   = 7
+state = 3
+-------------------------------------------
+Matching rule:
+state(3), char(b)  ->  new state(5), write(-), dir(-1)
+Current state of Turing Machine:
+--abbbb-a
+pos   = 6
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+--abbbb-a
+pos   = 5
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+--abbbb-a
+pos   = 4
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+--abbbb-a
+pos   = 3
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+--abbbb-a
+pos   = 2
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+--abbbb-a
+pos   = 1
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(-)  ->  new state(0), write(b), dir(1)
+Current state of Turing Machine:
+-babbbb-a
+pos   = 2
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(a)  ->  new state(1), write(-), dir(1)
+Current state of Turing Machine:
+-b-bbbb-a
+pos   = 3
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+-b-bbbb-a
+pos   = 4
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+-b-bbbb-a
+pos   = 5
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+-b-bbbb-a
+pos   = 6
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(*)  ->  new state(1), write(*), dir(1)
+Current state of Turing Machine:
+-b-bbbb-a
+pos   = 7
+state = 1
+-------------------------------------------
+Matching rule:
+state(1), char(-)  ->  new state(3), write(a), dir(-1)
+Current state of Turing Machine:
+-b-bbbbaa
+pos   = 6
+state = 3
+-------------------------------------------
+Matching rule:
+state(3), char(b)  ->  new state(5), write(-), dir(-1)
+Current state of Turing Machine:
+-b-bbb-aa
+pos   = 5
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+-b-bbb-aa
+pos   = 4
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+-b-bbb-aa
+pos   = 3
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+-b-bbb-aa
+pos   = 2
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(-)  ->  new state(0), write(b), dir(1)
+Current state of Turing Machine:
+-bbbbb-aa
+pos   = 3
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(b)  ->  new state(2), write(-), dir(1)
+Current state of Turing Machine:
+-bb-bb-aa
+pos   = 4
+state = 2
+-------------------------------------------
+Matching rule:
+state(2), char(*)  ->  new state(2), write(*), dir(1)
+Current state of Turing Machine:
+-bb-bb-aa
+pos   = 5
+state = 2
+-------------------------------------------
+Matching rule:
+state(2), char(*)  ->  new state(2), write(*), dir(1)
+Current state of Turing Machine:
+-bb-bb-aa
+pos   = 6
+state = 2
+-------------------------------------------
+Matching rule:
+state(2), char(-)  ->  new state(3), write(b), dir(-1)
+Current state of Turing Machine:
+-bb-bbbaa
+pos   = 5
+state = 3
+-------------------------------------------
+Matching rule:
+state(3), char(b)  ->  new state(5), write(-), dir(-1)
+Current state of Turing Machine:
+-bb-b-baa
+pos   = 4
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(*)  ->  new state(5), write(*), dir(-1)
+Current state of Turing Machine:
+-bb-b-baa
+pos   = 3
+state = 5
+-------------------------------------------
+Matching rule:
+state(5), char(-)  ->  new state(0), write(b), dir(1)
+Current state of Turing Machine:
+-bbbb-baa
+pos   = 4
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(b)  ->  new state(2), write(-), dir(1)
+Current state of Turing Machine:
+-bbb--baa
+pos   = 5
+state = 2
+-------------------------------------------
+Matching rule:
+state(2), char(-)  ->  new state(3), write(b), dir(-1)
+Current state of Turing Machine:
+-bbb-bbaa
+pos   = 4
+state = 3
+-------------------------------------------
+Matching rule:
+state(3), char(-)  ->  new state(6), write(-), dir(1)
+Current state of Turing Machine:
+-bbb-bbaa
+pos   = 5
+state = 6
+-------------------------------------------
+Matching rule:
+state(6), char(b)  ->  new state(8), write(-), dir(-1)
+Current state of Turing Machine:
+-bbb--baa
+pos   = 4
+state = 8
+-------------------------------------------
+Matching rule:
+state(8), char(-)  ->  new state(0), write(b), dir(1)
+Current state of Turing Machine:
+-bbbb-baa
+pos   = 5
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(-)  ->  new state(6), write(-), dir(1)
+Current state of Turing Machine:
+-bbbb-baa
+pos   = 6
+state = 6
+-------------------------------------------
+Matching rule:
+state(6), char(b)  ->  new state(8), write(-), dir(-1)
+Current state of Turing Machine:
+-bbbb--aa
+pos   = 5
+state = 8
+-------------------------------------------
+Matching rule:
+state(8), char(-)  ->  new state(0), write(b), dir(1)
+Current state of Turing Machine:
+-bbbbb-aa
+pos   = 6
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(-)  ->  new state(6), write(-), dir(1)
+Current state of Turing Machine:
+-bbbbb-aa
+pos   = 7
+state = 6
+-------------------------------------------
+Matching rule:
+state(6), char(a)  ->  new state(7), write(-), dir(-1)
+Current state of Turing Machine:
+-bbbbb--a
+pos   = 6
+state = 7
+-------------------------------------------
+Matching rule:
+state(7), char(-)  ->  new state(0), write(a), dir(1)
+Current state of Turing Machine:
+-bbbbba-a
+pos   = 7
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(-)  ->  new state(6), write(-), dir(1)
+Current state of Turing Machine:
+-bbbbba-a
+pos   = 8
+state = 6
+-------------------------------------------
+Matching rule:
+state(6), char(a)  ->  new state(7), write(-), dir(-1)
+Current state of Turing Machine:
+-bbbbba--
+pos   = 7
+state = 7
+-------------------------------------------
+Matching rule:
+state(7), char(-)  ->  new state(0), write(a), dir(1)
+Current state of Turing Machine:
+-bbbbbaa-
+pos   = 8
+state = 0
+-------------------------------------------
+Matching rule:
+state(0), char(-)  ->  new state(6), write(-), dir(1)
+Current state of Turing Machine:
+-bbbbbaa-
+pos   = 9
+state = 6
+WARNING : Head is positioned outside writable stripe, so extra blank character '-' will be added at the end.
+-------------------------------------------
+Matching rule:
+state(6), char(-)  ->  new state(9), write(-), dir(0)
+Current state of Turing Machine:
+-bbbbbaa--
+pos   = 9
+state = 9
+-------------------------------------------
+Final state of Turnig Machine reached:
+-bbbbbaa--
